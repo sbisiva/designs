@@ -1,0 +1,44 @@
+.form{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 0.5rem
+}
+.name {
+    flex:1 0 10rem;
+}
+.email {
+    flex:1 0 10rem;
+}
+.button{
+    flex:1 0 5rem;
+    background-color: #c0b9a5;
+}
+
+.division2 > h1 {
+    color: transparent;
+    -webkit-text-storke-width:1px;
+    -webkit-text-stroke-color:white;
+    position: relative;
+}
+.division2 > h1 ::before,
+.division2 > h1 ::after{
+    content:attr(data-text);
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition:0.3s ease-out;
+}
+
+.division2 > h1 :hover ::before{
+    color:#bb0000;
+    transform: translate(12px,-12px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-storke-color: black;
+}
+
+.division2 > h1 :hover ::before{
+    color:#77efff;
+    transform: translate(24px,-24px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-storke-color: black;
+}
